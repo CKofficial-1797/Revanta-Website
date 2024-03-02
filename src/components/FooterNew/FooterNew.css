@@ -49,21 +49,13 @@
     font-size : 5rem;
     text-decoration: Underline;
 }
-/* .navbar-brand {
-    padding-top: var(--bs-navbar-brand-padding-y);
-    padding-bottom: var(--bs-navbar-brand-padding-y);
-    margin-right: var(--bs-navbar-brand-margin-end);
-    font-size: var(--bs-navbar-brand-font-size);
-    color: var(--bs-navbar-brand-color);
-    text-decoration: none;
-    white-space: nowrap;
-} */
+
 a{
     text-decoration:none;
     color: white;
 }
 a:hover{
-    /* text-decoration: underline; */
+    
     color: rgb(86, 86, 252);
 }
 .col-lg-2{
