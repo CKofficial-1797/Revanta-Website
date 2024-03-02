@@ -13,6 +13,8 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import RevPic from "../../img/Car.jfif"
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -27,15 +29,16 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Welcome to </span>
+          <span>Team Revanta</span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+          Team Revanta is the official technical team of NIT Jamshedpur which design solar electric vehicles.
+We aim for designing a highly efficient mileage hybrid solar electric vehicle with minimal carbon footprint. Revanta Supermileage was started in the year 2009 as a result of the dream of a group of students who wanted to break the barriers of mileage. The team is being guided by Dr. KDP Singh (Mech. Dept) and Dr. Madhu Singh (Elect. Dept).
+Switching from gasoline vehicles to electric vehicles in 2014. Just after the break of approx. 2 years which corona pandemic imposed on us, we shifted to four wheels.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
-          <button className="button i-button">Hire me</button>
+          <button className="button i-button">Read more</button>
         </Link>
         {/* social icons */}
         <div className="i-icons">
@@ -48,7 +51,7 @@ const Intro = () => {
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <img className="img" src={RevPic} alt="" />
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
@@ -64,7 +67,7 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1="Official Technical Team of" text2="NIT JSR" />
         </motion.div>
 
         {/* animation */}
@@ -75,7 +78,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Switched Gasoline" text2="to Electric Vehicle" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

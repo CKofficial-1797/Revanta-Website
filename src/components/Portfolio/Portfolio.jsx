@@ -6,6 +6,10 @@ import Sidebar from "../../img/sidebar.png";
 import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
+import WholeTeam from "../../img/WholeTeam.jpg";
+import RevantaGirls from "../../img/RevantaGirls.jpg"
+import Electrical from "../../img/Electrical.jpg"
+import Batch22 from "../../img/Batch22.jpg"
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -13,8 +17,8 @@ const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
       {/* heading */}
-      <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
-      <span>Portfolio</span>
+      <span style={{color: darkMode?'white': ''}}>Team</span>
+      <span>Members</span>
 
       {/* slider */}
       <Swiper
@@ -24,17 +28,17 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <img src={WholeTeam} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <img src={RevantaGirls} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <img src={Electrical} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={HOC} alt="" />
-        </SwiperSlide>
+        {/* <SwiperSlide>
+          <img src={Batch22} alt="" />
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );

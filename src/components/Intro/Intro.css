@@ -35,7 +35,7 @@
 }
 .i-button {
   width: 6rem;
-  height: 2rem;
+  height: 3rem;
 }
 .i-icons {
   margin-top: 3rem;
@@ -93,7 +93,7 @@
   filter: blur(72px);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .Intro {
     flex-direction: column;
     gap: 7rem;
@@ -111,4 +111,7 @@
     /* display: none; */
     top: -7rem !important;;
   }
+}
+.img{
+  border-radius: 100%;
 }
